@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+service TestService {
+    rpc TestMethod (PresonRequest) returns (stream PersonResponce);
+    
+}
+
+message PersonResponce {
+    string  result = 1;
+}
+
+
+message PresonRequest {
+    int32 num = 1;
+}
+
+
+message MessageName {
+    
+}
